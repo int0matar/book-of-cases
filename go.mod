@@ -1,4 +1,4 @@
-module github.com/int0matar/book-of-cases
+module github.com/int0matar/case-book
 
 go 1.16
 
