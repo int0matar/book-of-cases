@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/int0matar/book-of-cases"
-	"github.com/int0matar/book-of-cases/package/handler"
 	"log"
+
+	todo "github.com/int0matar/case-book"
+	"github.com/int0matar/case-book/package/handler"
 )
 
 func main() {
