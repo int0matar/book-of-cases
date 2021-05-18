@@ -11,12 +11,12 @@ type Server struct {
 }
 
 func (serv *Server) Run(port string, handler http.Handler) error {
-	serv.httpServer = &http.Server {
-		Addr:			":" + port,
-		Handler:		handler,
+	serv.httpServer = &http.Server{
+		Addr:           ":" + port,
+		Handler:        handler,
 		MaxHeaderBytes: 1 << 20,
-		ReadTimeout:	10 * time.Second,
-		WriteTimeout:	10 * time.Second,
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
 	}
 	return serv.httpServer.ListenAndServe()
 }
