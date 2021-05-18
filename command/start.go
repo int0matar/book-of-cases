@@ -35,7 +35,7 @@ func main() {
 	handlers := handler.NewHandler(services)
 
 	server := new(todo.Server)
-	if err := server.Run(os.Getenv("LCPR_PORT"), handlers.InitRoutes()); err != nil {
+	if err := server.Run(os.Getenv("GIN_SERVER_PORT"), handlers.InitRoutes()); err != nil {
 		log.Fatalf("an error occurred while the server was starting: %s", err.Error())
 	}
 }
